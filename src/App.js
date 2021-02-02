@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./components/index";
+import "./App.css";
 
-function App() {
-  return (
+const API_key="a33e92de84ca0ba505abc69b46f89446";
+
+
+class App extends React.Component{
+  state={}
+  render() {
+    return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Weather/>
     </div>
-  );
+
+    );
+  }
 }
+
 
 export default App;
