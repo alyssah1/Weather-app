@@ -7,7 +7,7 @@ function Weather (props) {
         <div className="cards">
         <h1>{props.city}, {props.country}</h1>
         <h5 className="py-4">
-            <i className="fas fa-sun fa-3x"></i>
+            <i className={`fas ${props.weatherIcon} fa-4x`}></i>
         </h5>
         <h1 className="py-2">{props.temp_celsius}&deg;</h1>
 
