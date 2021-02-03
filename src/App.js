@@ -15,7 +15,7 @@ class App extends Component{
       country: undefined,
       icon: undefined,
       main: undefined,
-      celsius: undefined,
+      fahrenheit: undefined,
       temp_max: undefined,
       temp_min: undefined,
       description: "",
@@ -31,9 +31,9 @@ class App extends Component{
     }
   }
 
-  calCelsius(temp){
-    let celsius = Math.floor(temp - 273.15);
-    return celsius;
+  calFahrenheit(temp){
+    let fahrenheit = Math.floor(temp - 273.15) * (9.0 / 5.0) + 32;
+    return fahrenheit;
   }
 
   get_WeatherIcon(icons, rangeID){
@@ -79,9 +79,9 @@ class App extends Component{
 
     this.setState({
       city: `${response.name}, ${response.sys.country}`,
-      celsius: this.calCelsius(response.main.temp),
-      temp_max: this.calCelsius(response.main.temp_max),
-      temp_min: this.calCelsius(response.main.temp_min),
+      fahrenheit: this.calFahrenheit(response.main.temp),
+      temp_max: this.calFahrenheit(response.main.temp_max),
+      temp_min: this.calFahrenheit(response.main.temp_min),
       description: response.weather[0].description,
     });
 
@@ -99,7 +99,7 @@ class App extends Component{
       <Weather 
       city={this.state.city} 
       country={this.state.country}
-      temp_celsius={this.state.celsius}  
+      temp_fahrenheit={this.state.fahrenheit}  
       temp_max={this.state.temp_max}
       temp_min={this.state.temp_min}
       description={this.state.description}
