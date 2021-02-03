@@ -21,6 +21,9 @@ You will also see any lint errors in the console.
 # Description
 This weather app uses Open Weather Map API to retrieve weather data using the city and country.
 
+# Application Link
+https://alyssah1.github.io/Weather-app/
+
 ![screenshot](/src/images/weather.png)
 
 # Questions
