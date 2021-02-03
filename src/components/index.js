@@ -3,7 +3,7 @@ import React from "react";
 function Weather(props) {
     return (
         <>
-            <div className="container" style={{ textAlign: "center" }}>
+            <div className="container" style={{textAlign: "center"}}>
                 <div className="cards pt-4">
                     <h1>{props.city}</h1>
                     <h5 className="py-4">

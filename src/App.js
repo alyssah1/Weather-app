@@ -6,7 +6,6 @@ import Jumbotron from "./components/jumbotron";
 const API_KEY= process.env.REACT_APP_WEATHER_API_KEY;
 
 
-
 class App extends Component{
   constructor() {
     super();
