@@ -3,7 +3,8 @@ import Weather from "./components/index";
 import "./App.css";
 import Form from "./components/form";
 
-const API_key="a33e92de84ca0ba505abc69b46f89446";
+const API_KEY= process.env.REACT_APP_WEATHER_API_KEY;
+
 
 
 class App extends Component{
@@ -70,7 +71,7 @@ class App extends Component{
     const country = e.target.elements.country.value;
 
   if(city && country){
-    const API_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_key}`);
+    const API_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`);
 
     const response = await API_call.json();
 
