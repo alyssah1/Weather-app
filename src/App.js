@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Weather from "./components/index";
-import "./App.css";
 import Form from "./components/form";
+import Jumbotron from "./components/jumbotron";
 
 const API_KEY= process.env.REACT_APP_WEATHER_API_KEY;
 
@@ -95,6 +95,7 @@ class App extends Component{
   render() {
     return(
     <div className="App">
+      <Jumbotron/>
       <Form loadweather={this.getWeather} error={this.state.error} />
       <Weather 
       city={this.state.city} 
