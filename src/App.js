@@ -26,7 +26,7 @@ class App extends Component{
       Thunderstorm: "fa-bolt",
       Rain: "fa-cloud-showers-heavy",
       Snow: "fa-snowflake",
-      Clear: "fa-cloud-sun",
+      Clear: "fa-sun",
       Clouds: "fa-cloud",
     }
   }
