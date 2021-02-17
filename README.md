@@ -19,7 +19,7 @@ The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 # Description
-This weather app uses Open Weather Map API to retrieve weather data using the city and country.
+This weather app uses Open Weather Map API to retrieve weather data using the City and Country.
 
 # Application Link
 https://alyssah1.github.io/Weather-app/
